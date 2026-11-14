@@ -1,0 +1,112 @@
+/* DESIGN TOKENS */
+
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #64748b;
+    --accent-color: #f59e0b;
+    --background-color: #f8fafc;
+    --text-color: #1e293b;
+
+    /* Typography */
+    --font-family: Arial, sans-serif;
+    --heading-size: 32px;
+    --subheading-size: 24px;
+    --body-size: 16px;
+
+    /* Spacing */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    /* Border */
+    --border-radius: 8px;
+}
+
+/* GENERAL STYLING */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: var(--spacing-medium);
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-size: var(--heading-size);
+}
+
+h2 {
+    font-size: var(--subheading-size);
+}
+
+p {
+    font-size: var(--body-size);
+    line-height: 1.6;
+}
+
+/* COLOR BOXES */
+
+.color-box {
+    display: flex;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
+}
+
+.color-box div {
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+/* BUTTONS */
+
+button {
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-right: var(--spacing-small);
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: var(--spacing-large);
+}
