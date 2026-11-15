@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #172554;
+}
+
+/* FLEXBOX: Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #172554;
+    color: white;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* FLEXBOX: Navigation */
+.navbar {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* GRID: Overall Page Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 75vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FLEXBOX: Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #334155;
+}
+
+/* Main Content */
+.main-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    margin-bottom: 12px;
+}
+
+.main-content > p {
+    margin-bottom: 25px;
+    color: #64748b;
+}
+
+/* GRID: Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #dbeafe;
+    padding: 25px;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #172554;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
